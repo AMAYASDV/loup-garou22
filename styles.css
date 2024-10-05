@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Assurez-vous d'ajouter une image d'arrière-plan */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4A90E2; /* Couleur du texte */
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.hidden {
+    display: none;
+}
+
+.roles {
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Style pour la carte de rôle en forme de pentagone */
+.roleCard {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}

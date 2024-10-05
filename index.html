@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distribution des rôles - Loup-Garou</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="home">
+        <h1>Bienvenue dans le jeu Loup-Garou</h1>
+        <p>Développé par <strong>DEV AMAYAS M09</strong></p>
+        <button id="startGame">Commencer le Jeu</button>
+    </div>
+
+    <div class="container hidden" id="game">
+        <h1>Distribution des rôles - Loup-Garou</h1>
+
+        <!-- Step 1: Nombre de joueurs -->
+        <div id="step-1">
+            <label for="numPlayers">Nombre de joueurs :</label>
+            <input type="number" id="numPlayers" min="3" max="20" placeholder="Entrez le nombre de joueurs">
+            <button id="nextToRoles">Suivant</button>
+        </div>
+
+        <!-- Step 2: Sélection des rôles -->
+        <div id="step-2" class="hidden">
+            <h2>Sélectionnez les rôles :</h2>
+            <div class="roles">
+                <label>Villageois: <input type="number" min="0" id="villagers" value="0"></label>
+                <label>Loup-Garou: <input type="number" min="0" id="werewolves" value="0"></label>
+                <label>Voyante: <input type="number" min="0" id="seer" value="0"></label>
+                <label>Sorcière: <input type="number" min="0" id="witch" value="0"></label>
+                <label>Chasseur: <input type="number" min="0" id="hunter" value="0"></label>
+                <label>Cupidon: <input type="number" min="0" id="cupid" value="0"></label>
+                <label>Petite Fille: <input type="number" min="0" id="littleGirl" value="0"></label>
+                <label>Voleur: <input type="number" min="0" id="thief" value="0"></label>
+                <label>Bouc émissaire: <input type="number" min="0" id="scapegoat" value="0"></label>
+                <label>Ancien: <input type="number" min="0" id="elder" value="0"></label>
+                <label>Salvateur: <input type="number" min="0" id="rescuer" value="0"></label>
+                <label>Grand Méchant Loup: <input type="number" min="0" id="bigBadWolf" value="0"></label>
+                <label>Loup-Garou Blanc: <input type="number" min="0" id="whiteWerewolf" value="0"></label>
+                <label>Enfant Sauvage: <input type="number" min="0" id="wildChild" value="0"></label>
+                <label>Renard: <input type="number" min="0" id="fox" value="0"></label>
+                <label>Joueur de Flûte: <input type="number" min="0" id="piper" value="0"></label>
+                <label>L'Ange: <input type="number" min="0" id="angel" value="0"></label>
+                <label>Montreur d'Ours: <input type="number" min="0" id="bearTamer" value="0"></label>
+                <label>Le Corbeau: <input type="number" min="0" id="crow" value="0"></label>
+                <label>L'Idiot du Village: <input type="number" min="0" id="villageIdiot" value="0"></label>
+                <label>Loup Noir: <input type="number" min="0" id="blackWolf" value="0"></label>
+                <label>Loup Bleu: <input type="number" min="0" id="blueWolf" value="0"></label>
+                <label>Alpha: <input type="number" min="0" id="alpha" value="0"></label>
+                <label>Cadavre: <input type="number" min="0" id="corpse" value="0"></label>
+            </div>
+            <button id="distributeRoles">Distribuer les rôles</button>
+        </div>
+
+        <!-- Step 3: Distribution des rôles -->
+        <div id="step-3" class="hidden">
+            <h2>Votre rôle :</h2>
+            <div id="roleCard" class="roleCard"></div>
+            <button id="nextRole">Rôle Suivant</button>
+            <button id="restart" class="hidden">Recommencer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
